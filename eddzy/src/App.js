@@ -1,3 +1,4 @@
+// Updated src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
@@ -27,14 +28,8 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           
-          {/* Dashboard route with Header and Footer */}
-          <Route path="/dashboard" element={
-            <>
-              <Header />
-              <Dashboard />
-              <Footer />
-            </>
-          } />
+          {/* Dashboard route without Header and Footer */}
+          <Route path="/dashboard" element={<Dashboard />} />
           
           {/* About route with Header and Footer */}
           <Route path="/about" element={
